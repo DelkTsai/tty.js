@@ -1,0 +1,66 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'socket.io' ]
+2 info using npm@2.15.5
+3 info using node@v4.4.5
+4 verbose install initial load of /var/www/tty.js/package.json
+5 verbose installManyTop reading scoped package data from /var/www/tty.js/node_modules/express/package.json
+6 verbose installManyTop reading scoped package data from /var/www/tty.js/node_modules/term.js/package.json
+7 info package.json express@3.4.4 No license field.
+8 verbose readDependencies loading dependencies from /var/www/tty.js/package.json
+9 silly cache add args [ 'socket.io@0.9.16', null ]
+10 verbose cache add spec socket.io@0.9.16
+11 silly cache add parsed spec Result {
+11 silly cache add   raw: 'socket.io@0.9.16',
+11 silly cache add   scope: null,
+11 silly cache add   name: 'socket.io',
+11 silly cache add   rawSpec: '0.9.16',
+11 silly cache add   spec: '0.9.16',
+11 silly cache add   type: 'version' }
+12 silly addNamed socket.io@0.9.16
+13 verbose addNamed "0.9.16" is a plain semver version for socket.io
+14 silly mapToRegistry name socket.io
+15 silly mapToRegistry using default registry
+16 silly mapToRegistry registry https://registry.npmjs.org/
+17 silly mapToRegistry data Result {
+17 silly mapToRegistry   raw: 'socket.io',
+17 silly mapToRegistry   scope: null,
+17 silly mapToRegistry   name: 'socket.io',
+17 silly mapToRegistry   rawSpec: '',
+17 silly mapToRegistry   spec: 'latest',
+17 silly mapToRegistry   type: 'tag' }
+18 silly mapToRegistry uri https://registry.npmjs.org/socket.io
+19 verbose addNameVersion registry:https://registry.npmjs.org/socket.io not in flight; fetching
+20 verbose request uri https://registry.npmjs.org/socket.io
+21 verbose request no auth needed
+22 info attempt registry request try #1 at 16:56:38
+23 verbose request id 5cbec39a2bbbf4eb
+24 http request GET https://registry.npmjs.org/socket.io
+25 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 103.245.222.162:443
+26 info attempt registry request try #2 at 16:58:55
+27 http request GET https://registry.npmjs.org/socket.io
+28 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 23.235.39.162:443
+29 info attempt registry request try #3 at 17:02:03
+30 http request GET https://registry.npmjs.org/socket.io
+31 verbose stack Error: connect ETIMEDOUT 103.245.222.162:443
+31 verbose stack     at Object.exports._errnoException (util.js:870:11)
+31 verbose stack     at exports._exceptionWithHostPort (util.js:893:20)
+31 verbose stack     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1061:14)
+32 verbose cwd /var/www/tty.js/bin
+33 error Linux 3.19.0-25-generic
+34 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "socket.io"
+35 error node v4.4.5
+36 error npm  v2.15.5
+37 error code ETIMEDOUT
+38 error errno ETIMEDOUT
+39 error syscall connect
+40 error network connect ETIMEDOUT 103.245.222.162:443
+40 error network This is most likely not a problem with npm itself
+40 error network and is related to network connectivity.
+40 error network In most cases you are behind a proxy or have bad network settings.
+40 error network
+40 error network If you are behind a proxy, please make sure that the
+40 error network 'proxy' config is set properly.  See: 'npm help config'
+41 verbose exit [ 1, true ]
